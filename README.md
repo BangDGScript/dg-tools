@@ -1,4 +1,5 @@
 # dg-tools
 Script buat embed
-Kalkulator:
-  > MLBB
+<br>
+<br><b>Kalkulator:</b>
+- MLBB (prototype)
