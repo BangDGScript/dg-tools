@@ -3,146 +3,292 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kalkulator Win Rate Mobile Legends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kalkulator Win Rate MLBB - Dunia Games</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
 
     body {
-      margin: 0;
-      padding: 16px;
-      font-family: Arial, sans-serif;
-      color: #222;
-      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #222222;
     }
 
     .calculator {
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-    }
-
-    h2 {
-      font-size: 20px;
-      margin: 0 0 12px;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    label {
-      display: block;
-      margin: 14px 0 6px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    input {
       width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 14px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      background: #ffffff;
     }
 
-    .buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    button {
-      flex: 1;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      font-size: 15px;
-      cursor: pointer;
-    }
-
-    #calculate {
-      background: #e53935;
-      color: white;
-    }
-
-    #reset {
-      background: #eee;
-      color: #222;
-    }
-
-    #result {
-      margin-top: 18px;
-      padding: 15px;
-      background: #f5f5f5;
-      border-radius: 8px;
+    .calculator h2 {
+      margin: 0 0 5px;
+      font-size: 18px;
+      line-height: 1.3;
       text-align: center;
     }
 
-    .percentage {
-      font-size: 30px;
-      font-weight: bold;
-      color: #e53935;
+    .subtitle {
+      margin: 0 0 14px;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+      color: #666666;
     }
 
-    [hidden] { display: none !important; }
+    .input-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .field input {
+      width: 100%;
+      min-width: 0;
+      height: 42px;
+      padding: 8px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 7px;
+      background: #ffffff;
+      color: #222222;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .field input:focus {
+      border-color: #e11d48;
+      box-shadow: 0 0 0 2px rgba(225, 29, 72, 0.1);
+    }
+
+    .result {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 82px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background: #f8fafc;
+      text-align: center;
+    }
+
+    .result-label {
+      margin-bottom: 4px;
+      color: #64748b;
+      font-size: 12px;
+    }
+
+    .result-value {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #e11d48;
+    }
+
+    .error {
+      min-height: 16px;
+      margin: 0 0 8px;
+      color: #dc2626;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .button-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 8px;
+    }
+
+    button {
+      min-height: 42px;
+      border: 0;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .calculate-btn {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .reset-btn {
+      background: #e5e7eb;
+      color: #374151;
+    }
+
+    button:focus-visible {
+      outline: 3px solid #94a3b8;
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 360px) {
+      .calculator {
+        padding: 10px;
+      }
+
+      .calculator h2 {
+        font-size: 16px;
+      }
+
+      .field label {
+        font-size: 11px;
+      }
+
+      .result-value {
+        font-size: 27px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <main class="calculator">
-    <h2>Kalkulator Win Rate Mobile Legends</h2>
-    <p>Masukkan total pertandingan dan jumlah kemenangan untuk menghitung WR kamu.</p>
+    <h2>Kalkulator Win Rate MLBB</h2>
 
-    <form id="wr-form">
-      <label for="matches">Total Match</label>
-      <input type="number" id="matches" min="1" step="1" placeholder="Contoh: 500" required>
+    <p class="subtitle">
+      Hitung persentase kemenangan Mobile Legends kamu!
+    </p>
 
-      <label for="wins">Total Kemenangan</label>
-      <input type="number" id="wins" min="0" step="1" placeholder="Contoh: 300" required>
+    <form id="wr-form" novalidate>
 
-      <div class="buttons">
-        <button id="calculate" type="submit">Hitung WR</button>
-        <button id="reset" type="reset">Reset</button>
+      <div class="input-row">
+        <div class="field">
+          <label for="matches">Total Match</label>
+          <input
+            type="number"
+            id="matches"
+            min="1"
+            step="1"
+            placeholder="Contoh: 100"
+            inputmode="numeric"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="wins">Total Win</label>
+          <input
+            type="number"
+            id="wins"
+            min="0"
+            step="1"
+            placeholder="Contoh: 60"
+            inputmode="numeric"
+            required
+          >
+        </div>
       </div>
-    </form>
 
-    <div id="result" role="status" aria-live="polite" hidden>
-      <p>Win Rate kamu saat ini:</p>
-      <div class="percentage" id="wr-value">0%</div>
-    </div>
+      <div class="result" aria-live="polite">
+        <span class="result-label">Win Rate Kamu</span>
+        <span class="result-value" id="wr-result">--%</span>
+      </div>
+
+      <p class="error" id="error-message" role="alert"></p>
+
+      <div class="button-row">
+        <button type="submit" class="calculate-btn">
+          Hitung WR
+        </button>
+
+        <button type="reset" class="reset-btn">
+          Reset
+        </button>
+      </div>
+
+    </form>
   </main>
 
   <script>
-    const form = document.getElementById("wr-form");
-    const result = document.getElementById("result");
-    const wrValue = document.getElementById("wr-value");
+    (function () {
+      "use strict";
 
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
+      const form = document.getElementById("wr-form");
+      const matchesInput = document.getElementById("matches");
+      const winsInput = document.getElementById("wins");
+      const result = document.getElementById("wr-result");
+      const error = document.getElementById("error-message");
 
-      const matches = Number(document.getElementById("matches").value);
-      const wins = Number(document.getElementById("wins").value);
-
-      if (!Number.isSafeInteger(matches) || matches <= 0 ||
-          !Number.isSafeInteger(wins) || wins < 0 || wins > matches) {
-        alert("Masukkan jumlah match dan kemenangan yang valid!");
-        result.hidden = true;
-        return;
+      function showError(message) {
+        error.textContent = message;
+        result.textContent = "--%";
       }
 
-      const wr = (wins / matches) * 100;
-      wrValue.textContent = wr.toFixed(2) + "%";
-      result.hidden = false;
-    });
+      function calculateWR(event) {
+        event.preventDefault();
 
-    form.addEventListener("reset", function() {
-      result.hidden = true;
-    });
+        error.textContent = "";
+
+        const matchText = matchesInput.value.trim();
+        const winText = winsInput.value.trim();
+
+        if (matchText === "" || winText === "") {
+          showError("Isi Total Match dan Total Win terlebih dahulu.");
+          return;
+        }
+
+        const matches = Number(matchText);
+        const wins = Number(winText);
+
+        if (
+          !Number.isSafeInteger(matches) ||
+          !Number.isSafeInteger(wins) ||
+          matches <= 0 ||
+          wins < 0
+        ) {
+          showError("Masukkan jumlah match dan win yang valid.");
+          return;
+        }
+
+        if (wins > matches) {
+          showError("Total Win tidak boleh melebihi Total Match.");
+          return;
+        }
+
+        const winRate = (wins / matches) * 100;
+
+        result.textContent = winRate.toFixed(2) + "%";
+      }
+
+      form.addEventListener("submit", calculateWR);
+
+      form.addEventListener("reset", function () {
+        result.textContent = "--%";
+        error.textContent = "";
+      });
+
+      [matchesInput, winsInput].forEach(function (input) {
+        input.addEventListener("input", function () {
+          error.textContent = "";
+          result.textContent = "--%";
+        });
+      });
+    })();
   </script>
+
 </body>
 </html>
