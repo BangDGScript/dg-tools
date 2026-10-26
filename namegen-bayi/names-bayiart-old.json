@@ -1,0 +1,2075 @@
+{
+  "Abimanyu": {
+    "arti": "Pemberani dan berjiwa kepahlawanan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Abinaya": {
+    "arti": "Penuh semangat",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ace": {
+    "arti": "Yang terdepan / Unggul",
+    "gaya": [
+      "Modern",
+      "Minimalis"
+    ]
+  },
+  "Ada": {
+    "arti": "Bangsawan / Keindahan",
+    "gaya": [
+      "Lembut",
+      "Modern",
+      "Aesthetic"
+    ]
+  },
+  "Adelia": {
+    "arti": "Mulia dan berbudi baik",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Adiratna": {
+    "arti": "Permata yang utama",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Aditya": {
+    "arti": "Matahari",
+    "gaya": [
+      "Gagah",
+      "Klasik",
+      "Aesthetic"
+    ]
+  },
+  "Adiwangsa": {
+    "arti": "Keturunan mulia",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Aerith": {
+    "arti": "Bunga bumi yang murni",
+    "gaya": [
+      "Eksotik",
+      "Lembut",
+      "Aesthetic"
+    ]
+  },
+  "Agastya": {
+    "arti": "Bijaksana dan berpengetahuan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Aizawa": {
+    "arti": "Penjaga yang tenang",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Alhaitham": {
+    "arti": "Cendekiawan bijak",
+    "gaya": [
+      "Eksotik",
+      "Gagah",
+      "Karismatik"
+    ]
+  },
+  "Aloy": {
+    "arti": "Penyelamat / Pejuang mandiri",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Minimalis"
+    ]
+  },
+  "Amara": {
+    "arti": "Abadi dan tidak lekang waktu",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ambar": {
+    "arti": "Harum dan semerbak",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ambarwati": {
+    "arti": "Perempuan yang harum",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Amy": {
+    "arti": "Penyayang dan penuh kasih",
+    "gaya": [
+      "Modern",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Andini": {
+    "arti": "Penurut dan lembut",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Anggara": {
+    "arti": "Bersemangat dan penuh kekuatan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Anggraini": {
+    "arti": "Perempuan yang anggun",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Anindya": {
+    "arti": "Sempurna, tanpa cela, atau unggul",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Klasik"
+    ]
+  },
+  "Anya": {
+    "arti": "Anggun, penuh pesona (asal Slavia)",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Arbiter": {
+    "arti": "Hakim yang adil",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Eksotik"
+    ]
+  },
+  "Arka": {
+    "arti": "Cahaya atau matahari",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Klasik"
+    ]
+  },
+  "Armin": {
+    "arti": "Prajurit universal / Pemikir",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Arthur": {
+    "arti": "Bangsawan mulia / Beruang kuat",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Arum": {
+    "arti": "Harum dan wangi",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Arya": {
+    "arti": "Mulia dan terhormat",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Asui": {
+    "arti": "Embun musim semi",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Atreus": {
+    "arti": "Prajurit tanpa rasa takut",
+    "gaya": [
+      "Gagah",
+      "Klasik",
+      "Eksotik"
+    ]
+  },
+  "Aurelia": {
+    "arti": "Keemasan",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Klasik"
+    ]
+  },
+  "Ayaka": {
+    "arti": "Bunga musim dingin yang anggun",
+    "gaya": [
+      "Lembut",
+      "Modern",
+      "Aesthetic"
+    ]
+  },
+  "Ayu": {
+    "arti": "Cantik dan anggun",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bagaskara": {
+    "arti": "Matahari yang bersinar",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bagus": {
+    "arti": "Baik dan tampan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bakugo": {
+    "arti": "Kemenangan yang gempita",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Banyu": {
+    "arti": "Air",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Baskara": {
+    "arti": "Matahari",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Bayu": {
+    "arti": "Angin",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bening": {
+    "arti": "Jernih dan bersih",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bima": {
+    "arti": "Kuat dan pemberani",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bintang": {
+    "arti": "Bintang yang bersinar",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Birawa": {
+    "arti": "Hebat dan perkasa",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bulan": {
+    "arti": "Bulan yang bercahaya",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Bulma": {
+    "arti": "Wanita cerdas dan inovatif",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Byakuya": {
+    "arti": "Malam putih yang anggun",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Eksotik"
+    ]
+  },
+  "Cahaya": {
+    "arti": "Sinar penerang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Caitlyn": {
+    "arti": "Murni dan bersih",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Cakra": {
+    "arti": "Roda kekuatan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Candra": {
+    "arti": "Bulan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Cantika": {
+    "arti": "Cantik dan mempesona",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Cempaka": {
+    "arti": "Bunga yang harum",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Childe": {
+    "arti": "Prajurit muda yang berani",
+    "gaya": [
+      "Gagah",
+      "Minimalis"
+    ]
+  },
+  "Chris": {
+    "arti": "Pengikut kebaikan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Ciri": {
+    "arti": "Putri takdir / Ratu muda",
+    "gaya": [
+      "Lembut",
+      "Modern",
+      "Aesthetic"
+    ]
+  },
+  "Citra": {
+    "arti": "Gambaran atau kesan baik",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Claire": {
+    "arti": "Cahaya terang",
+    "gaya": [
+      "Lembut",
+      "Modern",
+      "Aesthetic"
+    ]
+  },
+  "Cloud": {
+    "arti": "Awan tinggi yang luas",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Minimalis"
+    ]
+  },
+  "Cortana": {
+    "arti": "Pedang kebijaksanaan",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Daisy": {
+    "arti": "Bunga daisy segar",
+    "gaya": [
+      "Lembut",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Damar": {
+    "arti": "Pelita atau penerang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Damayanti": {
+    "arti": "Perempuan yang menenangkan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Danastri": {
+    "arti": "Perempuan yang cantik",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Danendra": {
+    "arti": "Raja yang kaya",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Dante": {
+    "arti": "Abadi dan teguh",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Darma": {
+    "arti": "Kebajikan dan kebaikan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Dewi": {
+    "arti": "Sosok perempuan yang mulia",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Diah": {
+    "arti": "Gadis atau putri",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Diluc": {
+    "arti": "Fajar yang menyalakan harapan",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Dinda": {
+    "arti": "Adik perempuan tersayang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Dirgantara": {
+    "arti": "Angkasa yang luas",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Dwiandra": {
+    "arti": "Dua sosok yang mulia",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ekko": {
+    "arti": "Gema harapan",
+    "gaya": [
+      "Modern",
+      "Minimalis"
+    ]
+  },
+  "Elena": {
+    "arti": "Cahaya bersinar",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Ellie": {
+    "arti": "Cahaya yang bersinar",
+    "gaya": [
+      "Modern",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Epona": {
+    "arti": "Dewi pelindung",
+    "gaya": [
+      "Lembut",
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Eren": {
+    "arti": "Kebebasan / Pejuang berani",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Minimalis"
+    ]
+  },
+  "Erlangga": {
+    "arti": "Bangsawan yang mulia",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Erwin": {
+    "arti": "Sahabat tentara / Pemimpin berbakat",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Karismatik"
+    ]
+  },
+  "Erza": {
+    "arti": "Bunga murni pejuang",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Ethan": {
+    "arti": "Keteguhan / Kekuatan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Fajar": {
+    "arti": "Cahaya pagi",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Freya": {
+    "arti": "Dewi cinta dan keindahan",
+    "gaya": [
+      "Lembut",
+      "Klasik",
+      "Aesthetic"
+    ]
+  },
+  "Furina": {
+    "arti": "Gelombang keadilan",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Eksotik"
+    ]
+  },
+  "Futaba": {
+    "arti": "Daun kembar yang segar",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Modern"
+    ]
+  },
+  "Gajeel": {
+    "arti": "Besi yang kuat",
+    "gaya": [
+      "Gagah",
+      "Eksotik",
+      "Minimalis"
+    ]
+  },
+  "Galang": {
+    "arti": "Menyatukan dan memperkuat",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ganyu": {
+    "arti": "Hujan yang membawa berkah",
+    "gaya": [
+      "Eksotik",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Gayatri": {
+    "arti": "Ibu yang penuh kebijaksanaan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Geralt": {
+    "arti": "Tombak pahlawan / Pelindung",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Ghafar": {
+    "arti": "Yang Maha Pengampun; terkait nama Arab Ghafār",
+    "gaya": [
+      "Gagah",
+      "Klasik",
+      "Minimalis"
+    ]
+  },
+  "Giyu": {
+    "arti": "Kebenaran dan keadilan",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Gohan": {
+    "arti": "Nasi berkah / Kemakmuran",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Goku": {
+    "arti": "Kesadaran akan langit",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Gray": {
+    "arti": "Ketenangan es",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Guntur": {
+    "arti": "Gemuruh petir",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Hadi": {
+    "arti": "Pemimpin atau penunjuk jalan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Haris": {
+    "arti": "Penjaga dan pelindung",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Haru": {
+    "arti": "Musim semi yang hangat",
+    "gaya": [
+      "Modern",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Hawks": {
+    "arti": "Pencerah yang cepat",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Hinata": {
+    "arti": "Bunga matahari / Tempat yang cerah",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Hu": {
+    "arti": "Bunga persik musim semi",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Ichigo": {
+    "arti": "Pelindung nomor satu",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Indah": {
+    "arti": "Cantik dan elok",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Indira": {
+    "arti": "Keindahan dan kemegahan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Inosuke": {
+    "arti": "Babi hutan pemberani / Pemuda tangguh",
+    "gaya": [
+      "Gagah",
+      "Eksotik",
+      "Minimalis"
+    ]
+  },
+  "Intan": {
+    "arti": "Batu permata yang berharga",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Itachi": {
+    "arti": "Musang / Burung penyendiri yang bijak",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Jatmika": {
+    "arti": "Sopan dan berbudi luhur",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Jaya": {
+    "arti": "Kemenangan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Jayce": {
+    "arti": "Penyembuh / Pemimpin inovatif",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Minimalis"
+    ]
+  },
+  "Jelita": {
+    "arti": "Cantik dan menawan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Jill": {
+    "arti": "Gadis yang anggun dan berani",
+    "gaya": [
+      "Modern",
+      "Minimalis"
+    ]
+  },
+  "Jinx": {
+    "arti": "Pembawa energi gembira",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Minimalis"
+    ]
+  },
+  "Joel": {
+    "arti": "Tuhan adalah pelindung",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "John": {
+    "arti": "Anugerah Tuhan / Pejuang",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Joker": {
+    "arti": "Kartu AS pengguncang takdir",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Juvia": {
+    "arti": "Hujan yang penuh cinta",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Kairi": {
+    "arti": "Lautan yang indah",
+    "gaya": [
+      "Lembut",
+      "Modern",
+      "Aesthetic"
+    ]
+  },
+  "Kakashi": {
+    "arti": "Orang-orang ketakutan / Orang terpandang",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Eksotik"
+    ]
+  },
+  "Kamala": {
+    "arti": "Bunga teratai",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kanao": {
+    "arti": "Kemauan yang teguh",
+    "gaya": [
+      "Lembut",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Kartika": {
+    "arti": "Bintang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kasumi": {
+    "arti": "Kabut musim semi",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Kazuha": {
+    "arti": "Daun maple yang tenang",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Kemala": {
+    "arti": "Batu permata",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kenanga": {
+    "arti": "Bunga yang harum",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kencana": {
+    "arti": "Emas",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Klasik"
+    ]
+  },
+  "Kento": {
+    "arti": "Tujuh samudera yang tenang",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Keqing": {
+    "arti": "Fajar yang bersinar cerah",
+    "gaya": [
+      "Lembut",
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Kinasih": {
+    "arti": "Yang dikasihi dan dicintai",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kirana": {
+    "arti": "Sinar atau cahaya yang indah",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Modern"
+    ]
+  },
+  "Kirishima": {
+    "arti": "Pemuda sejati bagai karang",
+    "gaya": [
+      "Eksotik",
+      "Gagah",
+      "Aesthetic"
+    ]
+  },
+  "Knuckles": {
+    "arti": "Kuat bagai karang",
+    "gaya": [
+      "Eksotik",
+      "Gagah"
+    ]
+  },
+  "Kratos": {
+    "arti": "Kekuatan dan kekuasaan",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Kumala": {
+    "arti": "Permata yang berharga",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kushina": {
+    "arti": "Kecantikan yang abadi",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Eksotik"
+    ]
+  },
+  "Kusuma": {
+    "arti": "Bunga yang indah",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Kyojuro": {
+    "arti": "Menara api yang cerah",
+    "gaya": [
+      "Gagah",
+      "Eksotik",
+      "Minimalis"
+    ]
+  },
+  "Laksmi": {
+    "arti": "Keberuntungan dan kemakmuran",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Larasati": {
+    "arti": "Nama yang diasosiasikan dengan keselarasan",
+    "gaya": [
+      "Lembut",
+      "Klasik",
+      "Aesthetic"
+    ]
+  },
+  "Law": {
+    "arti": "Aturan dan keadilan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Leon": {
+    "arti": "Singa yang berani",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Lestari": {
+    "arti": "Tetap ada, bertahan, atau tidak berubah",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Levi": {
+    "arti": "Gabungan, bersatu (asal Ibrani)",
+    "gaya": [
+      "Modern",
+      "Gagah",
+      "Karismatik"
+    ]
+  },
+  "Link": {
+    "arti": "Penyambung / Penghubung kebaikan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Loid": {
+    "arti": "Kekuatan publik / Pemimpin bijak",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Lucy": {
+    "arti": "Cahaya penerang",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Luffy": {
+    "arti": "Pemimpin yang membebaskan",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Luigi": {
+    "arti": "Prajurit terkenal",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Lunafreya": {
+    "arti": "Dewi bulan yang murni",
+    "gaya": [
+      "Aesthetic",
+      "Eksotik",
+      "Lembut"
+    ]
+  },
+  "Maharani": {
+    "arti": "Ratu atau permaisuri",
+    "gaya": [
+      "Lembut",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Maharatu": {
+    "arti": "Ratu yang agung",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Mahardika": {
+    "arti": "Merdeka, luhur, atau mulia",
+    "gaya": [
+      "Aesthetic",
+      "Eksotik",
+      "Lembut"
+    ]
+  },
+  "Mahendra": {
+    "arti": "Raja yang agung",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Mahesa": {
+    "arti": "Kerbau yang kuat",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Maki": {
+    "arti": "Kebenaran dan ketajaman",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Makoto": {
+    "arti": "Kebenaran dan ketulusan",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Gagah"
+    ]
+  },
+  "Mario": {
+    "arti": "Pria pemberani pelindung",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Master": {
+    "arti": "Anugerah Tuhan / Pejuang sejati",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Mayang": {
+    "arti": "Bunga pohon pinang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Megumi": {
+    "arti": "Berkah / Rahmat yang indah",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Mel": {
+    "arti": "Pemimpin yang anggun",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Melati": {
+    "arti": "Bunga melati yang harum",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Mentari": {
+    "arti": "Matahari yang bersinar",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Midoriya": {
+    "arti": "Pencapai cita-cita tertinggi",
+    "gaya": [
+      "Aesthetic",
+      "Eksotik",
+      "Lembut"
+    ]
+  },
+  "Mikasa": {
+    "arti": "Tiga topi bambu (keberuntungan)",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Karismatik"
+    ]
+  },
+  "Minato": {
+    "arti": "Pelabuhan / Tempat yang aman",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Gagah"
+    ]
+  },
+  "Mipha": {
+    "arti": "Putri air yang lembut",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Mirio": {
+    "arti": "Sejuta harapan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Momo": {
+    "arti": "Ribu kebaikan yang mekar",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Nahida": {
+    "arti": "Pohon kebijaksanaan",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Nami": {
+    "arti": "Gelombang laut yang cerdas",
+    "gaya": [
+      "Modern",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Nanda": {
+    "arti": "Kebahagiaan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Naruto": {
+    "arti": "Pusaran air / Angin laut",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Nathan": {
+    "arti": "Pemberian yang berharga / Petualang",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Natsu": {
+    "arti": "Musim panas yang hangat",
+    "gaya": [
+      "Minimalis",
+      "Eksotik",
+      "Modern"
+    ]
+  },
+  "Naufal": {
+    "arti": "Dermawan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Nero": {
+    "arti": "Kuat dan berani",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Neuvillette": {
+    "arti": "Penguasa air yang adil",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Nezuko": {
+    "arti": "Bunga bola salju yang indah",
+    "gaya": [
+      "Lembut",
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Nirmala": {
+    "arti": "Suci dan bersih",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Nirwana": {
+    "arti": "Keadaan terbebas dari penderitaan dalam tradisi Buddhis",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Nobara": {
+    "arti": "Mawar di gurun",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Noctis": {
+    "arti": "Cahaya di malam hari",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Nugraha": {
+    "arti": "Anugerah atau karunia",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Nusa": {
+    "arti": "Pulau atau tanah air",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Orihime": {
+    "arti": "Putri yang menenun kebahagiaan",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Pandu": {
+    "arti": "Pemimpin dan penunjuk jalan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Peach": {
+    "arti": "Manis dan lembut bagai persik",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Permata": {
+    "arti": "Batu mulia atau sesuatu yang sangat berharga",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Pertiwi": {
+    "arti": "Bumi atau tanah air",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Pradana": {
+    "arti": "Utama dan terpenting",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Pradipta": {
+    "arti": "Bercahaya terang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Pranata": {
+    "arti": "Tatanan dan aturan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Pranawa": {
+    "arti": "Bunyi suci",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Pranendra": {
+    "arti": "Pemimpin kehidupan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Prasetya": {
+    "arti": "Janji atau ikrar",
+    "gaya": [
+      "Aesthetic",
+      "Eksotik",
+      "Lembut"
+    ]
+  },
+  "Pratama": {
+    "arti": "Pertama atau yang utama",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Pratista": {
+    "arti": "Keindahan (anindya) bagai pratista",
+    "gaya": [
+      "Aesthetic",
+      "Eksotik",
+      "Lembut"
+    ]
+  },
+  "Puspita": {
+    "arti": "Bunga yang mekar",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Raditya": {
+    "arti": "Matahari",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Raiden": {
+    "arti": "Petir yang abadi",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Raka": {
+    "arti": "Bulan purnama",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Rangga": {
+    "arti": "Kesatria dan bangsawan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ratih": {
+    "arti": "Dewi kecantikan dan cinta",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ratna": {
+    "arti": "Permata",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Rembulan": {
+    "arti": "Bulan yang bersinar",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Ren": {
+    "arti": "Teratai yang mekar indah",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Rendra": {
+    "arti": "Cerdas dan tajam",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Renji": {
+    "arti": "Cinta dan kebaikan",
+    "gaya": [
+      "Minimalis",
+      "Gagah",
+      "Modern"
+    ]
+  },
+  "Riku": {
+    "arti": "Daratan / Bumi yang kokoh",
+    "gaya": [
+      "Minimalis",
+      "Gagah",
+      "Modern"
+    ]
+  },
+  "Rinjani": {
+    "arti": "Nama gunung yang megah",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Robin": {
+    "arti": "Burung pemenang / Burung hangat",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Rosalina": {
+    "arti": "Mawar yang indah bagai bintang",
+    "gaya": [
+      "Aesthetic",
+      "Eksotik",
+      "Lembut"
+    ]
+  },
+  "Roxas": {
+    "arti": "Fajar penerang kegelapan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Rukia": {
+    "arti": "Bunga putih murni",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Ryuji": {
+    "arti": "Naga yang agung",
+    "gaya": [
+      "Minimalis",
+      "Eksotik",
+      "Gagah"
+    ]
+  },
+  "Sabo": {
+    "arti": "Pahlawan kebebasan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Sadie": {
+    "arti": "Putri raja / Keberanian",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Sakura": {
+    "arti": "Bunga sakura musim semi",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Minimalis"
+    ]
+  },
+  "Samus": {
+    "arti": "Pelindung galaksi",
+    "gaya": [
+      "Minimalis",
+      "Gagah",
+      "Modern"
+    ]
+  },
+  "Sanji": {
+    "arti": "Tiga pujian / Penghormatan",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Saraswati": {
+    "arti": "Dewi ilmu pengetahuan, seni, dan kebijaksanaan",
+    "gaya": [
+      "Lembut",
+      "Klasik",
+      "Aesthetic"
+    ]
+  },
+  "Sasuke": {
+    "arti": "Pertolongan yang hebat",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Minimalis"
+    ]
+  },
+  "Satoru": {
+    "arti": "Pencerahan spiritual yang sempurna",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Satria": {
+    "arti": "Pejuang pemberani",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Sekar": {
+    "arti": "Bunga",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Sekarini": {
+    "arti": "Bunga yang indah",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Sephiroth": {
+    "arti": "Hitungan ilahi / Keagungan",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Setiawan": {
+    "arti": "Orang yang setia",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Shadow": {
+    "arti": "Bayangan pelindung",
+    "gaya": [
+      "Eksotik",
+      "Minimalis"
+    ]
+  },
+  "Shanks": {
+    "arti": "Pemimpin yang dihormati",
+    "gaya": [
+      "Eksotik",
+      "Minimalis"
+    ]
+  },
+  "Shinobu": {
+    "arti": "Kecerdasan dan ketenangan",
+    "gaya": [
+      "Lembut",
+      "Aesthetic",
+      "Eksotik"
+    ]
+  },
+  "Sonic": {
+    "arti": "Cepat bagai suara",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Sora": {
+    "arti": "Langit biru yang luas",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Squall": {
+    "arti": "Badai yang tangguh",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Srikandi": {
+    "arti": "Perempuan pemberani",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Suguru": {
+    "arti": "Kecerdasan yang gemilang",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Surya": {
+    "arti": "Matahari",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Swasti": {
+    "arti": "Keselamatan dan kesejahteraan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Tails": {
+    "arti": "Prajurit / Penemu genius",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Tanjiro": {
+    "arti": "Putra pertama pencapai cita-cita",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Teja": {
+    "arti": "Cahaya dan kemegahan",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Tidus": {
+    "arti": "Matahari / Gelombang laut",
+    "gaya": [
+      "Minimalis",
+      "Gagah",
+      "Modern"
+    ]
+  },
+  "Tifa": {
+    "arti": "Kecantikan yang abadi / Harmoni",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Tirta": {
+    "arti": "Air suci",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Todoroki": {
+    "arti": "Keseimbangan es dan api",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic",
+      "Gagah"
+    ]
+  },
+  "Toshiro": {
+    "arti": "Naga es yang tenang",
+    "gaya": [
+      "Eksotik",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Triss": {
+    "arti": "Bintang yang bersinar",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Trunks": {
+    "arti": "Pelindung masa depan",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Uraraka": {
+    "arti": "Tea jernih / Kecerahan",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Utama": {
+    "arti": "Terbaik, paling penting, atau unggul",
+    "gaya": [
+      "Gagah",
+      "Karismatik",
+      "Klasik"
+    ]
+  },
+  "Vegeta": {
+    "arti": "Raja yang berbangga diri",
+    "gaya": [
+      "Gagah",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Venti": {
+    "arti": "Angin segar kebebasan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Vergil": {
+    "arti": "Penuh berkembang",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Vi": {
+    "arti": "Bunga violet yang indah",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Videl": {
+    "arti": "Keberanian wanita pejuang",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Viktor": {
+    "arti": "Pemenang / Penemu hebat",
+    "gaya": [
+      "Minimalis"
+    ]
+  },
+  "Wendy": {
+    "arti": "Angin penyembuh",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Wening": {
+    "arti": "Jernih dan tenang",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Wibawa": {
+    "arti": "Kewibawaan atau pengaruh yang dihormati",
+    "gaya": [
+      "Aesthetic",
+      "Lembut",
+      "Minimalis"
+    ]
+  },
+  "Widuri": {
+    "arti": "Batu permata yang berkilau",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Wira": {
+    "arti": "Pahlawan pemberani",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Xiao": {
+    "arti": "Pelindung malam / Roh penjaga",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Yamato": {
+    "arti": "Kedamaian agung",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Gagah"
+    ]
+  },
+  "Yelan": {
+    "arti": "Anggrek biru yang misterius",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Yennefer": {
+    "arti": "Bayangan putih / Kecantikan abadi",
+    "gaya": [
+      "Eksotik",
+      "Aesthetic"
+    ]
+  },
+  "Yor": {
+    "arti": "Bunga murni / Keindahan",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Yudhistira": {
+    "arti": "Teguh dalam kebenaran",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Yudhistya": {
+    "arti": "Teguh dan bijaksana",
+    "gaya": [
+      "Modern",
+      "Klasik"
+    ]
+  },
+  "Yuji": {
+    "arti": "Keberanian dan kebaikan anak muda",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Eksotik"
+    ]
+  },
+  "Yuna": {
+    "arti": "Malam / Bulan purnama",
+    "gaya": [
+      "Lembut",
+      "Modern",
+      "Aesthetic"
+    ]
+  },
+  "Yuta": {
+    "arti": "Keberanian yang luar biasa",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Eksotik"
+    ]
+  },
+  "Zelda": {
+    "arti": "Wanita pejuang yang bijak",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic",
+      "Lembut"
+    ]
+  },
+  "Zenitsu": {
+    "arti": "Keutamaan dan kebaikan",
+    "gaya": [
+      "Eksotik",
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Zeref": {
+    "arti": "Cendekiawan abadi",
+    "gaya": [
+      "Minimalis",
+      "Modern"
+    ]
+  },
+  "Zhongli": {
+    "arti": "Keteguhan bagai batu karang",
+    "gaya": [
+      "Eksotik",
+      "Gagah",
+      "Karismatik"
+    ]
+  },
+  "Zidane": {
+    "arti": "Kemajuan dan keberanian",
+    "gaya": [
+      "Minimalis",
+      "Aesthetic"
+    ]
+  },
+  "Zoro": {
+    "arti": "Fajar pejuang samurai",
+    "gaya": [
+      "Gagah",
+      "Minimalis",
+      "Modern"
+    ]
+  }
+}
