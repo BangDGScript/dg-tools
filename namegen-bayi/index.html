@@ -76,7 +76,7 @@ function render(n) {
   $('result').hidden = false;
   $('name').textContent = n.nama;
   $('tags').replaceChildren();
-  const tags = [...(Array.isArray(n.gaya) ? n.gaya : []), n.gender, n.keunikan].filter(Boolean);
+  const tags = [...(Array.isArray(n.gaya) ? n.gaya : []), n.gender].filter(Boolean);
   for (const t of tags) {
     const s = document.createElement('span');
     s.className = 'tag';
