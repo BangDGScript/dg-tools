@@ -22,19 +22,19 @@ select{width:100%;border:1px solid #cbd4e0;border-radius:9px;background:#fff;col
 <body>
 <main class="wrap"><section class="panel">
 <h1>Generator Nama Bayi Anime & Game</h1>
-<p class="intro">Cari inspirasi nama anak tiga kata dari karakter favoritmu. Pilih jenis kelamin, lalu klik Generate Nama!</p>
+<p class="intro">Pilih jenis kelamin, lalu klik Generate Nama!</p>
 <div class="filters"><div class="field"><label for="gender">Jenis kelamin</label><select id="gender"><option value="">Semua</option><option>Laki-laki</option><option>Perempuan</option></select></div></div>
 <div class="buttons"><button class="primary" id="generate" type="button" disabled>Generate Nama</button><button id="reset" type="button">Reset Filter</button></div>
 <div id="error" class="error" role="alert"></div>
-<div class="placeholder" id="placeholder" aria-live="polite">Klik <strong>Generate Nama</strong> untuk mendapatkan inspirasi nama bayi!</div>
+<div class="placeholder" id="placeholder" aria-live="polite">Klik <strong>Generate Nama</strong>!</div>
 <section class="result" id="result" hidden aria-live="polite">
 <div class="eyebrow">Rekomendasi nama</div><h2 class="name" id="name"></h2><div class="tags" id="tags"></div>
-<div class="section-label">Arti per kata</div><div id="meanings"></div>
-<div class="section-label">Makna keseluruhan</div><p class="detail" id="overall"></p>
-<div class="section-label">Terinspirasi dari</div><p class="detail" id="reference"></p>
-<div class="section-label">Karakteristik & sifat</div><p class="detail" id="traits"></p>
+<div class="section-label">Arti kata</div><div id="meanings"></div>
+<div class="section-label">Makna</div><p class="detail" id="overall"></p>
+<div class="section-label">Inspirasi</div><p class="detail" id="reference"></p>
+<div class="section-label">Sifat</div><p class="detail" id="traits"></p>
 <div class="buttons"><button id="copy" type="button">Salin Nama</button><button id="copyAll" type="button">Salin Nama & Arti</button></div>
-<p class="note">Catatan editorial: Gunakan arti dan interpretasi nama sebagai inspirasi.</p>
+<p class="note">Catatan editorial: Gunakan arti dan interpretasi nama hanya sebagai inspirasi.</p>
 </section></section></main>
 <script>
 'use strict';
