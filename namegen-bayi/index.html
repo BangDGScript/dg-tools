@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Generator Nama Bayi Anime & Game | Dunia Games</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#17243a;background:#fff}
+*{box-sizing:border-box}body{margin:0;padding:12px}.wrap{max-width:760px;margin:auto}.panel{border:1px solid #e2e7ee;border-radius:16px;padding:18px;background:#fff}
+h1{font-size:clamp(21px,4vw,27px);line-height:1.2;margin:0 0 8px}h2{font-size:20px;margin:0 0 8px}p{line-height:1.5}.intro,.muted{color:#5d6879}.intro{font-size:14px;margin:0 0 20px}
+.filters{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}.field label{display:block;font-weight:650;font-size:13px;margin-bottom:6px}
+select{width:100%;border:1px solid #cbd4e0;border-radius:9px;background:#fff;color:#17243a;padding:11px 12px;font:inherit;font-size:14px;min-width:0}
+.buttons{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}button{font:inherit;font-size:14px;font-weight:700;border-radius:10px;border:1px solid #d3dce8;padding:11px 16px;background:#fff;color:#223149;cursor:pointer}button.primary{background:#e92535;border-color:#e92535;color:white;flex:1}button:disabled{opacity:.5;cursor:not-allowed}
+.count{font-size:13px;color:#586578;margin-top:10px}.result,.placeholder{margin-top:15px;background:#f7f9fc;border:1px solid #e3e9f1;border-radius:15px;padding:17px}.result[hidden],.placeholder[hidden]{display:none}
+.placeholder{text-align:center;color:#5d6879;font-size:14px;line-height:1.5;padding:26px 17px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;color:#63718a}
+.name{font-size:clamp(24px,5vw,34px);margin:8px 0 12px;overflow-wrap:anywhere}.tags{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0 16px}.tag{font-size:12px;background:#e7edf6;color:#304664;padding:5px 9px;border-radius:999px}
+.meaning{display:grid;grid-template-columns:minmax(90px,1fr) 2fr;gap:10px;border-top:1px solid #e0e6ef;padding:11px 0;font-size:14px}.meaning strong{overflow-wrap:anywhere}.section-label{font-size:13px;font-weight:750;margin:18px 0 5px}.detail{font-size:14px;margin:4px 0 10px;line-height:1.55}.note{font-size:12px;color:#667185;line-height:1.5;margin:14px 0 0}.error{color:#a51e2a;font-size:14px}
+@media(max-width:440px){body{padding:8px}.panel{padding:14px}.buttons button{padding:11px 12px}.meaning{grid-template-columns:minmax(75px,1fr) 1.7fr}}
+</style>
+</head>
+<body>
+<main class="wrap"><section class="panel">
+<h1>Generator Nama Bayi Anime & Game</h1>
+<p class="intro">Cari inspirasi nama anak dari karakter favoritmu.</p>
+<div class="filters"><div class="field"><label for="gender">Jenis kelamin</label><select id="gender"><option value="">Semua</option><option>Laki-laki</option><option>Perempuan</option></select></div></div>
+<div class="buttons"><button class="primary" id="generate" type="button" disabled>Generate Nama</button><button id="reset" type="button">Reset Filter</button></div>
+<div class="count" id="count" aria-live="polite">Memuat database nama...</div>
+<div id="error" class="error" role="alert"></div>
+<div class="placeholder" id="placeholder" aria-live="polite">Klik <strong>Generate Nama</strong>!</div>
+<section class="result" id="result" hidden aria-live="polite">
+<div class="eyebrow">Rekomendasi nama</div><h2 class="name" id="name"></h2><div class="tags" id="tags"></div>
+<div class="section-label">Arti kata</div><div id="meanings"></div>
+<div class="section-label">Makna</div><p class="detail" id="overall"></p>
+<div class="section-label">Inspirasi</div><p class="detail" id="reference"></p>
+<div class="section-label">Sifat</div><p class="detail" id="traits"></p>
+<div class="buttons"><button id="copy" type="button">Salin Nama</button><button id="copyAll" type="button">Salin Nama & Arti</button></div>
+<p class="note">Catatan editorial: Gunakan arti dan interpretasi nama hanya sebagai inspirasi.</p>
+</section></section></main>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+let names = [], dictionary = {}, matches = [], lastId = null, current = null;
+
+function filterData() {
+  const gender = $('gender').value;
+  matches = names.filter(n => {
+    const jumlahKata = typeof n.nama === 'string' ? n.nama.trim().split(/\s+/).length : 0;
+    return jumlahKata === 3 && (!gender || n.gender === gender);
+  });
+  $('count').textContent = `${matches.length} nama tiga kata cocok dari ${names.length} nama.`;
+  $('generate').disabled = matches.length === 0;
+}
+
+function showPlaceholder() {
+  $('result').hidden = true;
+  $('placeholder').hidden = false;
+  current = null;
+}
+
+function pick() {
+  if (!matches.length) {
+    showPlaceholder();
+    return;
+  }
+  const pool = matches.length > 1 ? matches.filter(n => n.id !== lastId && n.nama !== current?.nama) : matches;
+  const choices = pool.length ? pool : matches;
+  const n = choices[Math.floor(Math.random() * choices.length)];
+  lastId = n.id;
+  current = n;
+  render(n);
+}
+
+function render(n) {
+  $('placeholder').hidden = true;
+  $('result').hidden = false;
+  $('name').textContent = n.nama;
+  $('tags').replaceChildren();
+  const tags = [...(Array.isArray(n.gaya) ? n.gaya : []), n.gender, '3 kata', n.keunikan].filter(Boolean);
+  for (const t of tags) {
+    const s = document.createElement('span');
+    s.className = 'tag';
+    s.textContent = t;
+    $('tags').append(s);
+  }
+  $('meanings').replaceChildren();
+  for (const word of n.nama.trim().split(/\s+/)) {
+    const item = dictionary[word];
+    const row = document.createElement('div');
+    row.className = 'meaning';
+    const label = document.createElement('strong');
+    label.textContent = word;
+    const value = document.createElement('span');
+    value.textContent = item?.arti || 'Arti belum tersedia';
+    row.append(label, value);
+    $('meanings').append(row);
+  }
+  $('overall').textContent = n.arti_keseluruhan || 'Belum tersedia';
+  $('reference').textContent = `${n.karakter || '-'} — ${n.judul || '-'} (${n.kategori || '-'})`;
+  $('traits').textContent = n.karakteristik || 'Belum tersedia';
+}
+
+async function copyText(text, button) {
+  const original = button.textContent;
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      const area = document.createElement('textarea');
+      area.value = text;
+      area.style.position = 'fixed';
+      area.style.opacity = '0';
+      document.body.append(area);
+      area.select();
+      const ok = document.execCommand('copy');
+      area.remove();
+      if (!ok) throw new Error('Gagal menyalin');
+    }
+    button.textContent = 'Tersalin!';
+    setTimeout(() => { button.textContent = original; }, 1500);
+  } catch (e) {
+    alert('Tidak bisa menyalin otomatis. Silakan salin nama secara manual.');
+  }
+}
+
+$('generate').addEventListener('click', pick);
+$('reset').addEventListener('click', () => {
+  $('gender').value = '';
+  lastId = null;
+  filterData();
+  showPlaceholder();
+});
+$('gender').addEventListener('change', () => {
+  filterData();
+  showPlaceholder();
+});
+$('copy').addEventListener('click', () => {
+  if (current) copyText(current.nama, $('copy'));
+});
+$('copyAll').addEventListener('click', () => {
+  if (!current) return;
+  const words = current.nama.trim().split(/\s+/);
+  const meanings = words.map(w => `${w}: ${dictionary[w]?.arti || 'Arti belum tersedia'}`).join('\n');
+  copyText(`${current.nama}\n\nArti per kata:\n${meanings}\n\nMakna keseluruhan: ${current.arti_keseluruhan || '-'}\nReferensi: ${current.karakter || '-'} — ${current.judul || '-'}`, $('copyAll'));
+});
+
+(async () => {
+  try {
+    const responses = await Promise.all(['names-bayi.json', 'names-bayiarti.json'].map(file => fetch(file, {cache: 'no-cache'})));
+    if (responses.some(r => !r.ok)) throw Error('File JSON tidak ditemukan.');
+    [names, dictionary] = await Promise.all(responses.map(r => r.json()));
+    if (!Array.isArray(names) || !names.length || !dictionary || typeof dictionary !== 'object' || Array.isArray(dictionary)) {
+      throw Error('Format database tidak sesuai.');
+    }
+    filterData();
+    showPlaceholder();
+  } catch (e) {
+    $('count').textContent = 'Database belum berhasil dimuat.';
+    $('error').textContent = `${e.message} Pastikan kedua JSON berada satu folder dengan index.html.`;
+  }
+})();
+</script>
+</body>
+</html>
