@@ -2211,6 +2211,136 @@
         "Lembut",
         "Minimalis"
       ]
+    },
+    {
+      "nama": "Altair",
+      "gender": "Laki-laki",
+      "arti": "Elang yang terbang",
+      "karakter": "Altaïr Ibn-La’Ahad",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Berani, disiplin, teguh pada prinsip",
+      "gaya": [
+        "Gagah",
+        "Klasik"
+      ]
+    },
+    {
+      "nama": "Ezio",
+      "gender": "Laki-laki",
+      "arti": "Elang",
+      "karakter": "Ezio Auditore da Firenze",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Karismatik, cerdas, pantang menyerah",
+      "gaya": [
+        "Gagah",
+        "Klasik"
+      ]
+    },
+    {
+      "nama": "Connor",
+      "gender": "Laki-laki",
+      "arti": "Pencinta anjing pemburu",
+      "karakter": "Connor Kenway (Ratonhnhaké:ton)",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Teguh, pemberani, berjiwa pelindung",
+      "gaya": [
+        "Gagah",
+        "Modern"
+      ]
+    },
+    {
+      "nama": "Edward",
+      "gender": "Laki-laki",
+      "arti": "Penjaga kemakmuran",
+      "karakter": "Edward Kenway",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Mandiri, petualang, pemberani",
+      "gaya": [
+        "Klasik",
+        "Gagah"
+      ]
+    },
+    {
+      "nama": "Arno",
+      "gender": "Laki-laki",
+      "arti": "Elang",
+      "karakter": "Arno Dorian",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Setia, gigih, pemberani",
+      "gaya": [
+        "Klasik",
+        "Aesthetic"
+      ]
+    },
+    {
+      "nama": "Jacob",
+      "gender": "Laki-laki",
+      "arti": "Pemegang tumit",
+      "karakter": "Jacob Frye",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Percaya diri, berani, spontan",
+      "gaya": [
+        "Klasik",
+        "Modern"
+      ]
+    },
+    {
+      "nama": "Evie",
+      "gender": "Perempuan",
+      "arti": "Kehidupan",
+      "karakter": "Evie Frye",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Cerdas, teliti, mandiri",
+      "gaya": [
+        "Aesthetic",
+        "Klasik"
+      ]
+    },
+    {
+      "nama": "Kassandra",
+      "gender": "Perempuan",
+      "arti": "Bersinar di antara manusia",
+      "karakter": "Kassandra",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Tangguh, mandiri, pemberani",
+      "gaya": [
+        "Gagah",
+        "Klasik"
+      ]
+    },
+    {
+      "nama": "Aya",
+      "gender": "Perempuan",
+      "arti": "Tanda atau keajaiban",
+      "karakter": "Aya (Amunet)",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Teguh, cerdas, pemberani",
+      "gaya": [
+        "Aesthetic",
+        "Klasik"
+      ]
+    },
+    {
+      "nama": "Basim",
+      "gender": "Laki-laki",
+      "arti": "Tersenyum",
+      "karakter": "Basim Ibn Ishaq",
+      "judul": "Assassin's Creed",
+      "kategori": "Game",
+      "karakteristik": "Cerdik, tenang, penuh perhitungan",
+      "gaya": [
+        "Modern",
+        "Klasik"
+      ]
     }
   ],
   "nama_indonesia": [
