@@ -22,14 +22,15 @@ select{width:100%;border:1px solid #cbd4e0;border-radius:9px;background:#fff;col
 <body>
 <main class="wrap"><section class="panel">
 <h1>Generator Nama Bayi Anime & Game</h1>
-<p class="intro">Pilih jenis kelamin, lalu klik Generate Nama!</p>
+<p class="intro">Cari inspirasi nama dari karakter favoritmu.</p>
 <div class="filters"><div class="field"><label for="gender">Jenis kelamin</label><select id="gender"><option value="">Semua</option><option>Laki-laki</option><option>Perempuan</option></select></div></div>
 <div class="buttons"><button class="primary" id="generate" type="button" disabled>Generate Nama</button><button id="reset" type="button">Reset Filter</button></div>
+<div class="count" id="count" aria-live="polite">Memuat database nama...</div>
 <div id="error" class="error" role="alert"></div>
 <div class="placeholder" id="placeholder" aria-live="polite">Klik <strong>Generate Nama</strong>!</div>
 <section class="result" id="result" hidden aria-live="polite">
 <div class="eyebrow">Rekomendasi nama</div><h2 class="name" id="name"></h2><div class="tags" id="tags"></div>
-<div class="section-label">Arti kata</div><div id="meanings"></div>
+<div class="section-label">Arti</div><div id="meanings"></div>
 <div class="section-label">Makna</div><p class="detail" id="overall"></p>
 <div class="section-label">Inspirasi</div><p class="detail" id="reference"></p>
 <div class="section-label">Sifat</div><p class="detail" id="traits"></p>
@@ -39,123 +40,87 @@ select{width:100%;border:1px solid #cbd4e0;border-radius:9px;background:#fff;col
 <script>
 'use strict';
 const $ = id => document.getElementById(id);
-let names = [], dictionary = {}, matches = [], lastId = null, current = null;
-
+let characters = [], localNames = [], matches = [], current = null, previousName = '';
+const random = array => array[Math.floor(Math.random() * array.length)];
 function filterData() {
   const gender = $('gender').value;
-  matches = names.filter(n => {
-    const jumlahKata = typeof n.nama === 'string' ? n.nama.trim().split(/\s+/).length : 0;
-    return jumlahKata === 3 && (!gender || n.gender === gender);
-  });
+  matches = characters.filter(c => !gender || c.gender === gender).filter(c => localNames.filter(w => w.gender === c.gender && w.nama !== c.nama).length >= 2);
+  const combos = matches.reduce((total,c) => {
+    const count = localNames.filter(w => w.gender === c.gender && w.nama !== c.nama).length;
+    return total + count * (count - 1);
+  }, 0);
+  $('count').textContent = `${combos.toLocaleString('id-ID')} kemungkinan kombinasi dari ${matches.length} karakter.`;
   $('generate').disabled = matches.length === 0;
 }
-
 function showPlaceholder() {
   $('result').hidden = true;
   $('placeholder').hidden = false;
   current = null;
 }
-
 function pick() {
-  if (!matches.length) {
-    showPlaceholder();
-    return;
+  if (!matches.length) return showPlaceholder();
+  let result;
+  for (let i = 0; i < 12; i++) {
+    const character = random(matches);
+    const options = localNames.filter(w => w.gender === character.gender && w.nama !== character.nama);
+    const middle = random(options);
+    const last = random(options.filter(w => w.nama !== middle.nama));
+    result = {character, middle, last, nama: `${character.nama} ${middle.nama} ${last.nama}`, gender: character.gender};
+    if (result.nama !== previousName) break;
   }
-  const pool = matches.length > 1 ? matches.filter(n => n.id !== lastId && n.nama !== current?.nama) : matches;
-  const choices = pool.length ? pool : matches;
-  const n = choices[Math.floor(Math.random() * choices.length)];
-  lastId = n.id;
-  current = n;
-  render(n);
+  previousName = result.nama;
+  current = result;
+  render(result);
 }
-
 function render(n) {
   $('placeholder').hidden = true;
   $('result').hidden = false;
   $('name').textContent = n.nama;
   $('tags').replaceChildren();
-  const tags = [...(Array.isArray(n.gaya) ? n.gaya : []), n.gender].filter(Boolean);
-  for (const t of tags) {
-    const s = document.createElement('span');
-    s.className = 'tag';
-    s.textContent = t;
-    $('tags').append(s);
+  for (const tag of [...(n.character.gaya || []), n.gender]) {
+    const span = document.createElement('span');
+    span.className = 'tag'; span.textContent = tag; $('tags').append(span);
   }
   $('meanings').replaceChildren();
-  for (const word of n.nama.trim().split(/\s+/)) {
-    const item = dictionary[word];
-    const row = document.createElement('div');
-    row.className = 'meaning';
-    const label = document.createElement('strong');
-    label.textContent = word;
-    const value = document.createElement('span');
-    value.textContent = item?.arti || 'Arti belum tersedia';
-    row.append(label, value);
-    $('meanings').append(row);
+  for (const word of [n.character,n.middle,n.last]) {
+    const row = document.createElement('div'); row.className = 'meaning';
+    const label = document.createElement('strong'); label.textContent = word.nama;
+    const meaning = document.createElement('span'); meaning.textContent = word.arti;
+    row.append(label, meaning); $('meanings').append(row);
   }
-  $('overall').textContent = n.arti_keseluruhan || 'Belum tersedia';
-  $('reference').textContent = `${n.karakter || '-'} — ${n.judul || '-'} (${n.kategori || '-'})`;
-  $('traits').textContent = n.karakteristik || 'Belum tersedia';
+  $('overall').textContent = [n.character,n.middle,n.last].map(w => w.arti).join('; ');
+  $('reference').textContent = `${n.character.karakter || '-'} — ${n.character.judul || '-'} (${n.character.kategori || '-'})`;
+  $('traits').textContent = n.character.karakteristik || 'Belum tersedia';
 }
-
-async function copyText(text, button) {
-  const original = button.textContent;
+async function copyText(value,button) {
+  const original=button.textContent;
   try {
-    if (navigator.clipboard && window.isSecureContext) {
-      await navigator.clipboard.writeText(text);
-    } else {
-      const area = document.createElement('textarea');
-      area.value = text;
-      area.style.position = 'fixed';
-      area.style.opacity = '0';
-      document.body.append(area);
-      area.select();
-      const ok = document.execCommand('copy');
-      area.remove();
-      if (!ok) throw new Error('Gagal menyalin');
+    if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(value);
+    else {
+      const area=document.createElement('textarea');area.value=value;area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+      const ok=document.execCommand('copy');area.remove();if(!ok)throw Error('Gagal menyalin');
     }
-    button.textContent = 'Tersalin!';
-    setTimeout(() => { button.textContent = original; }, 1500);
-  } catch (e) {
-    alert('Tidak bisa menyalin otomatis. Silakan salin nama secara manual.');
-  }
+    button.textContent='Tersalin!';setTimeout(()=>button.textContent=original,1500);
+  } catch(e) {alert('Tidak bisa menyalin otomatis. Silakan salin nama secara manual.');}
 }
-
-$('generate').addEventListener('click', pick);
-$('reset').addEventListener('click', () => {
-  $('gender').value = '';
-  lastId = null;
-  filterData();
-  showPlaceholder();
+$('generate').addEventListener('click',pick);
+$('reset').addEventListener('click',()=>{$('gender').value='';previousName='';filterData();showPlaceholder();});
+$('gender').addEventListener('change',()=>{filterData();showPlaceholder();});
+$('copy').addEventListener('click',()=>{if(current)copyText(current.nama,$('copy'));});
+$('copyAll').addEventListener('click',()=>{
+  if(!current)return;
+  const words=[current.character,current.middle,current.last];
+  copyText(`${current.nama}\n\nArti per kata:\n${words.map(w=>`${w.nama}: ${w.arti}`).join('\n')}\n\nMakna keseluruhan: ${words.map(w=>w.arti).join('; ')}\nReferensi: ${current.character.karakter || '-'} — ${current.character.judul || '-'}`,$('copyAll'));
 });
-$('gender').addEventListener('change', () => {
-  filterData();
-  showPlaceholder();
-});
-$('copy').addEventListener('click', () => {
-  if (current) copyText(current.nama, $('copy'));
-});
-$('copyAll').addEventListener('click', () => {
-  if (!current) return;
-  const words = current.nama.trim().split(/\s+/);
-  const meanings = words.map(w => `${w}: ${dictionary[w]?.arti || 'Arti belum tersedia'}`).join('\n');
-  copyText(`${current.nama}\n\nArti per kata:\n${meanings}\n\nMakna keseluruhan: ${current.arti_keseluruhan || '-'}\nReferensi: ${current.karakter || '-'} — ${current.judul || '-'}`, $('copyAll'));
-});
-
-(async () => {
+(async()=>{
   try {
-    const responses = await Promise.all(['names-bayi.json', 'names-bayiarti.json'].map(file => fetch(file, {cache: 'no-cache'})));
-    if (responses.some(r => !r.ok)) throw Error('File JSON tidak ditemukan.');
-    [names, dictionary] = await Promise.all(responses.map(r => r.json()));
-    if (!Array.isArray(names) || !names.length || !dictionary || typeof dictionary !== 'object' || Array.isArray(dictionary)) {
-      throw Error('Format database tidak sesuai.');
-    }
-    filterData();
-    showPlaceholder();
-  } catch (e) {
-    $('count').textContent = 'Database belum berhasil dimuat.';
-    $('error').textContent = `${e.message} Pastikan kedua JSON berada satu folder dengan index.html dan halaman dibuka melalui GitHub Pages (bukan file lokal).`;
-  }
+    const response=await fetch('names-bayi.json',{cache:'no-cache'});
+    if(!response.ok)throw Error('File names-bayi.json tidak ditemukan.');
+    const db=await response.json();
+    if(!Array.isArray(db.karakter)||!Array.isArray(db.nama_indonesia)||!db.karakter.length||!db.nama_indonesia.length)throw Error('Format database tidak sesuai.');
+    characters=db.karakter;localNames=db.nama_indonesia;
+    filterData();showPlaceholder();
+  }catch(e){$('count').textContent='Database belum berhasil dimuat.';$('error').textContent=`${e.message} Pastikan names-bayi.json satu folder dengan index.html dan halaman dibuka melalui GitHub Pages.`;}
 })();
 </script>
 </body>
