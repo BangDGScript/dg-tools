@@ -25,7 +25,6 @@ select{width:100%;border:1px solid #cbd4e0;border-radius:9px;background:#fff;col
 <p class="intro">Cari inspirasi nama dari karakter favoritmu.</p>
 <div class="filters"><div class="field"><label for="gender">Jenis kelamin</label><select id="gender"><option value="">Semua</option><option>Laki-laki</option><option>Perempuan</option></select></div></div>
 <div class="buttons"><button class="primary" id="generate" type="button" disabled>Generate Nama</button><button id="reset" type="button">Reset Filter</button></div>
-<div class="count" id="count" aria-live="polite">Memuat database nama...</div>
 <div id="error" class="error" role="alert"></div>
 <div class="placeholder" id="placeholder" aria-live="polite">Klik <strong>Generate Nama</strong>!</div>
 <section class="result" id="result" hidden aria-live="polite">
@@ -48,7 +47,6 @@ function filterData() {
     const count = localNames.filter(w => w.gender === c.gender && w.nama !== c.nama).length;
     return total + count * (count - 1);
   }, 0);
-  $('count').textContent = `${combos.toLocaleString('id-ID')} kemungkinan kombinasi dari ${matches.length} karakter.`;
   $('generate').disabled = matches.length === 0;
 }
 function showPlaceholder() {
