@@ -1,124 +1,276 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
-<title>Generator Nama Bayi Anime & Game | Dunia Games</title>
-<style>
-:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#17243a;background:#fff}
-*{box-sizing:border-box}body{margin:0;padding:12px}.wrap{max-width:760px;margin:auto}.panel{border:1px solid #e2e7ee;border-radius:16px;padding:18px;background:#fff}
-h1{font-size:clamp(21px,4vw,27px);line-height:1.2;margin:0 0 8px}h2{font-size:20px;margin:0 0 8px}p{line-height:1.5}.intro,.muted{color:#5d6879}.intro{font-size:14px;margin:0 0 20px}
-.filters{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}.field label{display:block;font-weight:650;font-size:13px;margin-bottom:6px}
-select{width:100%;border:1px solid #cbd4e0;border-radius:9px;background:#fff;color:#17243a;padding:11px 12px;font:inherit;font-size:14px;min-width:0}
-.buttons{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}button{font:inherit;font-size:14px;font-weight:700;border-radius:10px;border:1px solid #d3dce8;padding:11px 16px;background:#fff;color:#223149;cursor:pointer}button.primary{background:#e92535;border-color:#e92535;color:white;flex:1}button:disabled{opacity:.5;cursor:not-allowed}
-.count{font-size:13px;color:#586578;margin-top:10px}.result,.placeholder{margin-top:15px;background:#f7f9fc;border:1px solid #e3e9f1;border-radius:15px;padding:17px}.result[hidden],.placeholder[hidden]{display:none}
-.placeholder{text-align:center;color:#5d6879;font-size:14px;line-height:1.5;padding:26px 17px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;color:#63718a}
-.name{font-size:clamp(24px,5vw,34px);margin:8px 0 12px;overflow-wrap:anywhere}.tags{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0 16px}.tag{font-size:12px;background:#e7edf6;color:#304664;padding:5px 9px;border-radius:999px}
-.meaning{display:grid;grid-template-columns:minmax(90px,1fr) 2fr;gap:10px;border-top:1px solid #e0e6ef;padding:11px 0;font-size:14px}.meaning strong{overflow-wrap:anywhere}.section-label{font-size:13px;font-weight:750;margin:18px 0 5px}.detail{font-size:14px;margin:4px 0 10px;line-height:1.55}.note{font-size:12px;color:#667185;line-height:1.5;margin:14px 0 0}.error{color:#a51e2a;font-size:14px}
-@media(max-width:440px){body{padding:8px}.panel{padding:14px}.buttons button{padding:11px 12px}.meaning{grid-template-columns:minmax(75px,1fr) 1.7fr}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Generator Nama Bayi Anime &amp; Game | Dunia Games</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #17243a;
+      background: #fff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 12px; }
+    .wrap { max-width: 760px; margin: auto; }
+    .panel { border: 1px solid #e2e7ee; border-radius: 16px; padding: 18px; background: #fff; }
+    h1 { font-size: clamp(21px, 4vw, 27px); line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 0 0 8px; }
+    p { line-height: 1.5; }
+    .intro { color: #5d6879; font-size: 14px; margin: 0 0 20px; }
+    .filters { display: grid; grid-template-columns: minmax(0, 1fr); gap: 13px; }
+    .field label { display: block; font-weight: 650; font-size: 13px; margin-bottom: 6px; }
+    select {
+      width: 100%; min-width: 0; border: 1px solid #cbd4e0;
+      border-radius: 9px; background: #fff; color: #17243a;
+      padding: 11px 12px; font: inherit; font-size: 14px;
+    }
+    .buttons { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 17px; }
+    button {
+      font: inherit; font-size: 14px; font-weight: 700;
+      border-radius: 10px; border: 1px solid #d3dce8;
+      padding: 11px 16px; background: #fff; color: #223149; cursor: pointer;
+    }
+    button.primary { background: #e92535; border-color: #e92535; color: #fff; flex: 1; }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    .result, .placeholder {
+      margin-top: 15px; background: #f7f9fc;
+      border: 1px solid #e3e9f1; border-radius: 15px; padding: 17px;
+    }
+    [hidden] { display: none !important; }
+    .placeholder { text-align: center; color: #5d6879; font-size: 14px; line-height: 1.5; padding: 26px 17px; }
+    .eyebrow { font-size: 12px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: #63718a; }
+    .name { font-size: clamp(24px, 5vw, 34px); margin: 8px 0 12px; overflow-wrap: anywhere; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 9px 0 16px; }
+    .tag { font-size: 12px; background: #e7edf6; color: #304664; padding: 5px 9px; border-radius: 999px; }
+    .meaning {
+      display: grid; grid-template-columns: minmax(90px, 1fr) 2fr;
+      gap: 10px; border-top: 1px solid #e0e6ef; padding: 11px 0; font-size: 14px;
+    }
+    .meaning strong { overflow-wrap: anywhere; }
+    .section-label { font-size: 13px; font-weight: 750; margin: 18px 0 5px; }
+    .detail { font-size: 14px; margin: 4px 0 10px; line-height: 1.55; }
+    .note { font-size: 12px; color: #667185; line-height: 1.5; margin: 14px 0 0; }
+    .error { color: #a51e2a; font-size: 14px; margin-top: 12px; }
+    .error:empty { display: none; }
+    @media (max-width: 440px) {
+      body { padding: 8px; }
+      .panel { padding: 14px; }
+      .buttons button { padding: 11px 12px; }
+      .meaning { grid-template-columns: minmax(75px, 1fr) 1.7fr; }
+    }
+  </style>
 </head>
 <body>
-<main class="wrap"><section class="panel">
-<h1>Generator Nama Bayi Anime & Game</h1>
-<p class="intro">Cari inspirasi nama dari karakter favoritmu.</p>
-<div class="filters"><div class="field"><label for="gender">Jenis kelamin</label><select id="gender"><option value="">Semua</option><option>Laki-laki</option><option>Perempuan</option></select></div></div>
-<div class="buttons"><button class="primary" id="generate" type="button" disabled>Generate Nama</button><button id="reset" type="button">Reset Filter</button></div>
-<div id="error" class="error" role="alert"></div>
-<div class="placeholder" id="placeholder" aria-live="polite">Klik <strong>Generate Nama</strong>!</div>
-<section class="result" id="result" hidden aria-live="polite">
-<div class="eyebrow">Rekomendasi nama</div><h2 class="name" id="name"></h2><div class="tags" id="tags"></div>
-<div class="section-label">Arti</div><div id="meanings"></div>
-<div class="section-label">Inspirasi</div><p class="detail" id="reference"></p>
-<div class="section-label">Sifat</div><p class="detail" id="traits"></p>
-<div class="buttons"><button id="copy" type="button">Salin Nama</button><button id="copyAll" type="button">Salin Nama & Arti</button></div>
-<p class="note">Catatan editorial: Gunakan arti dan interpretasi nama hanya sebagai inspirasi.</p>
-</section></section></main>
-<script>
-'use strict';
-const $ = id => document.getElementById(id);
-let characters = [], localNames = [], matches = [], current = null, previousName = '';
-const random = array => array[Math.floor(Math.random() * array.length)];
-function filterData() {
-  const gender = $('gender').value;
-  matches = characters.filter(c => !gender || c.gender === gender).filter(c => localNames.filter(w => w.gender === c.gender && w.nama !== c.nama).length >= 2);
-  const combos = matches.reduce((total,c) => {
-    const count = localNames.filter(w => w.gender === c.gender && w.nama !== c.nama).length;
-    return total + count * (count - 1);
-  }, 0);
-  $('generate').disabled = matches.length === 0;
-}
-function showPlaceholder() {
-  $('result').hidden = true;
-  $('placeholder').hidden = false;
-  current = null;
-}
-function pick() {
-  if (!matches.length) return showPlaceholder();
-  let result;
-  for (let i = 0; i < 12; i++) {
-    const character = random(matches);
-    const options = localNames.filter(w => w.gender === character.gender && w.nama !== character.nama);
-    const middle = random(options);
-    const last = random(options.filter(w => w.nama !== middle.nama));
-    result = {character, middle, last, nama: `${character.nama} ${middle.nama} ${last.nama}`, gender: character.gender};
-    if (result.nama !== previousName) break;
-  }
-  previousName = result.nama;
-  current = result;
-  render(result);
-}
-function render(n) {
-  $('placeholder').hidden = true;
-  $('result').hidden = false;
-  $('name').textContent = n.nama;
-  $('tags').replaceChildren();
-  for (const tag of [...(n.character.gaya || []), n.gender]) {
-    const span = document.createElement('span');
-    span.className = 'tag'; span.textContent = tag; $('tags').append(span);
-  }
-  $('meanings').replaceChildren();
-  for (const word of [n.character,n.middle,n.last]) {
-    const row = document.createElement('div'); row.className = 'meaning';
-    const label = document.createElement('strong'); label.textContent = word.nama;
-    const meaning = document.createElement('span'); meaning.textContent = word.arti;
-    row.append(label, meaning); $('meanings').append(row);
-  }
-  $('overall').textContent = [n.character,n.middle,n.last].map(w => w.arti).join('; ');
-  $('reference').textContent = `${n.character.karakter || '-'} — ${n.character.judul || '-'} (${n.character.kategori || '-'})`;
-  $('traits').textContent = n.character.karakteristik || 'Belum tersedia';
-}
-async function copyText(value,button) {
-  const original=button.textContent;
-  try {
-    if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(value);
-    else {
-      const area=document.createElement('textarea');area.value=value;area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
-      const ok=document.execCommand('copy');area.remove();if(!ok)throw Error('Gagal menyalin');
+  <main class="wrap">
+    <section class="panel" aria-label="Generator nama bayi anime dan game">
+      <h1>Generator Nama Bayi Anime &amp; Game</h1>
+      <p class="intro">Cari inspirasi nama dari karakter favoritmu.</p>
+
+      <div class="filters">
+        <div class="field">
+          <label for="gender">Jenis kelamin</label>
+          <select id="gender">
+            <option value="">Semua</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="primary" id="generate" type="button" disabled>Generate Nama</button>
+        <button id="reset" type="button">Reset Filter</button>
+      </div>
+      <div id="error" class="error" role="alert"></div>
+
+      <div class="placeholder" id="placeholder" aria-live="polite">
+        Klik <strong>Generate Nama</strong>!
+      </div>
+
+      <section class="result" id="result" hidden aria-live="polite">
+        <div class="eyebrow">Rekomendasi nama</div>
+        <h2 class="name" id="name"></h2>
+        <div class="tags" id="tags"></div>
+
+        <div class="section-label">Arti</div>
+        <div id="meanings"></div>
+
+        <div class="section-label">Inspirasi</div>
+        <p class="detail" id="reference"></p>
+
+        <div class="section-label">Sifat</div>
+        <p class="detail" id="traits"></p>
+
+        <div class="buttons">
+          <button id="copy" type="button">Salin Nama</button>
+          <button id="copyAll" type="button">Salin Nama &amp; Arti</button>
+        </div>
+        <p class="note">Catatan editorial: Gunakan arti dan interpretasi nama hanya sebagai inspirasi.</p>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    'use strict';
+
+    const $ = id => document.getElementById(id);
+    const ERROR_MESSAGE = 'Terjadi kesalahan. Silakan muat ulang halaman.';
+    let characters = [];
+    let localNames = [];
+    let matches = [];
+    let current = null;
+    let previousName = '';
+
+    const random = items => items[Math.floor(Math.random() * items.length)];
+
+    function filterData() {
+      const gender = $('gender').value;
+      matches = characters.filter(character => {
+        if (gender && character.gender !== gender) return false;
+        return localNames.filter(name =>
+          name.gender === character.gender && name.nama !== character.nama
+        ).length >= 2;
+      });
+      $('generate').disabled = matches.length === 0;
     }
-    button.textContent='Tersalin!';setTimeout(()=>button.textContent=original,1500);
-  } catch(e) {alert('Tidak bisa menyalin otomatis. Silakan salin nama secara manual.');}
-}
-$('generate').addEventListener('click',pick);
-$('reset').addEventListener('click',()=>{$('gender').value='';previousName='';filterData();showPlaceholder();});
-$('gender').addEventListener('change',()=>{filterData();showPlaceholder();});
-$('copy').addEventListener('click',()=>{if(current)copyText(current.nama,$('copy'));});
-$('copyAll').addEventListener('click',()=>{
-  if(!current)return;
-  const words=[current.character,current.middle,current.last];
-  copyText(`${current.nama}\n\nArti per kata:\n${words.map(w=>`${w.nama}: ${w.arti}`).join('\n')}\n\nMakna keseluruhan: ${words.map(w=>w.arti).join('; ')}\nReferensi: ${current.character.karakter || '-'} — ${current.character.judul || '-'}`,$('copyAll'));
-});
-(async()=>{
-  try {
-    const response=await fetch('names-bayi.json',{cache:'no-cache'});
-    if(!response.ok)throw Error('File names-bayi.json tidak ditemukan.');
-    const db=await response.json();
-    if(!Array.isArray(db.karakter)||!Array.isArray(db.nama_indonesia)||!db.karakter.length||!db.nama_indonesia.length)throw Error('Format database tidak sesuai.');
-    characters=db.karakter;localNames=db.nama_indonesia;
-    filterData();showPlaceholder();
-  }catch(e){$('count').textContent='Database belum berhasil dimuat.';$('error').textContent=`${e.message} Pastikan names-bayi.json satu folder dengan index.html dan halaman dibuka melalui GitHub Pages.`;}
-})();
-</script>
+
+    function showPlaceholder() {
+      $('result').hidden = true;
+      $('placeholder').hidden = false;
+      current = null;
+    }
+
+    function pick() {
+      if (!matches.length) {
+        showPlaceholder();
+        return;
+      }
+
+      let result;
+      for (let i = 0; i < 12; i++) {
+        const character = random(matches);
+        const options = localNames.filter(name =>
+          name.gender === character.gender && name.nama !== character.nama
+        );
+        const middle = random(options);
+        const last = random(options.filter(name => name.nama !== middle.nama));
+
+        result = {
+          character,
+          middle,
+          last,
+          nama: `${character.nama} ${middle.nama} ${last.nama}`,
+          gender: character.gender
+        };
+        if (result.nama !== previousName) break;
+      }
+
+      previousName = result.nama;
+      current = result;
+      render(result);
+    }
+
+    function render(result) {
+      $('name').textContent = result.nama;
+      $('tags').replaceChildren();
+
+      for (const tag of [...(result.character.gaya || []), result.gender]) {
+        const span = document.createElement('span');
+        span.className = 'tag';
+        span.textContent = tag;
+        $('tags').append(span);
+      }
+
+      $('meanings').replaceChildren();
+      for (const word of [result.character, result.middle, result.last]) {
+        const row = document.createElement('div');
+        row.className = 'meaning';
+
+        const label = document.createElement('strong');
+        label.textContent = word.nama;
+
+        const meaning = document.createElement('span');
+        meaning.textContent = word.arti || '-';
+
+        row.append(label, meaning);
+        $('meanings').append(row);
+      }
+
+      $('reference').textContent =
+        `${result.character.karakter || '-'} — ${result.character.judul || '-'} (${result.character.kategori || '-'})`;
+      $('traits').textContent = result.character.karakteristik || 'Belum tersedia';
+
+      $('placeholder').hidden = true;
+      $('result').hidden = false;
+    }
+
+    async function copyText(value, button) {
+      const original = button.textContent;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          const area = document.createElement('textarea');
+          area.value = value;
+          area.style.position = 'fixed';
+          area.style.opacity = '0';
+          document.body.append(area);
+          area.select();
+          const copied = document.execCommand('copy');
+          area.remove();
+          if (!copied) throw new Error('Copy failed');
+        }
+        button.textContent = 'Tersalin!';
+        setTimeout(() => { button.textContent = original; }, 1500);
+      } catch {
+        alert('Tidak bisa menyalin otomatis. Silakan salin nama secara manual.');
+      }
+    }
+
+    $('generate').addEventListener('click', pick);
+    $('reset').addEventListener('click', () => {
+      $('gender').value = '';
+      previousName = '';
+      filterData();
+      showPlaceholder();
+    });
+    $('gender').addEventListener('change', () => {
+      filterData();
+      showPlaceholder();
+    });
+    $('copy').addEventListener('click', () => {
+      if (current) copyText(current.nama, $('copy'));
+    });
+    $('copyAll').addEventListener('click', () => {
+      if (!current) return;
+      const words = [current.character, current.middle, current.last];
+      const text = `${current.nama}\n\nArti per kata:\n${words.map(word => `${word.nama}: ${word.arti}`).join('\n')}\n\nMakna keseluruhan: ${words.map(word => word.arti).join('; ')}\nReferensi: ${current.character.karakter || '-'} — ${current.character.judul || '-'}`;
+      copyText(text, $('copyAll'));
+    });
+
+    (async () => {
+      try {
+        const response = await fetch('./names-bayi.json', { cache: 'no-cache' });
+        if (!response.ok) throw new Error('Database unavailable');
+
+        const db = await response.json();
+        if (!Array.isArray(db.karakter) || !Array.isArray(db.nama_indonesia) ||
+            !db.karakter.length || !db.nama_indonesia.length) {
+          throw new Error('Invalid database');
+        }
+
+        characters = db.karakter;
+        localNames = db.nama_indonesia;
+        filterData();
+        showPlaceholder();
+      } catch (error) {
+        $('generate').disabled = true;
+        $('error').textContent = ERROR_MESSAGE;
+        console.error('Gagal memuat generator nama bayi:', error);
+      }
+    })();
+  </script>
 </body>
 </html>
