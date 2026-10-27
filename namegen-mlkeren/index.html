@@ -13,6 +13,9 @@
     .panel {border:1px solid #e2e7ee;border-radius:16px;padding:20px;background:#fff}
     h1 {font-size:clamp(21px,4vw,27px);margin:0 0 8px}
     .intro {font-size:14px;color:#5d6879;line-height:1.55;margin:0 0 20px}
+    .field {margin-bottom:16px}
+    .field label {display:block;font-size:14px;font-weight:700;margin-bottom:8px}
+    select {width:100%;padding:12px;border:1px solid #cbd4e0;border-radius:9px;background:#fff;color:#17243a;font:inherit}
     .result {background:#f7f9fc;border:1px solid #e3e9f1;border-radius:14px;padding:24px 14px;text-align:center;margin-bottom:15px}
     .label {font-size:12px;color:#687487;font-weight:700;margin-bottom:10px}
     .name {font-size:clamp(22px,5vw,34px);font-weight:800;line-height:1.5;overflow-wrap:anywhere;min-height:50px}
@@ -32,7 +35,20 @@
   <main class="wrap">
     <section class="panel" aria-label="Generator nama ML berwarna">
       <h1>Generator Nama ML Berwarna</h1>
-      <p class="intro">Temukan nickname Mobile Legends secara acak, lengkap dengan kode warna yang siap disalin.</p>
+      <p class="intro">Temukan nickname Mobile Legends secara acak, dengan atau tanpa kode warna.</p>
+      <div class="field">
+        <label for="mode">Pilihan Warna</label>
+        <select id="mode">
+          <option value="normal" selected>Biasa (Hitam)</option>
+          <option value="warna">Dengan Warna</option>
+        </select>
+      </div>
+      <div class="field" id="colorField">
+        <label for="color">Filter Warna</label>
+        <select id="color" disabled>
+          <option value="acak">Acak (Semua Warna)</option>
+        </select>
+      </div>
       <div class="result" aria-live="polite">
         <div class="label">Nickname kamu</div>
         <div class="name" id="nickname">Klik Tombol di Bawah!</div>
@@ -41,7 +57,7 @@
       </div>
       <button class="generate" id="generate" type="button" disabled>🎲 Pilihkan Nama Saya</button>
       <div class="status" id="status" role="status">Memuat database…</div>
-      <p class="note">Format yang disalin adalah [kode HEX]Nama. Tampilan warna di Mobile Legends bergantung pada dukungan game; tidak semua kolom atau versi game menerima kode warna dan simbol Unicode.</p>
+      <p class="note">Pilih warna tertentu atau Acak (Semua Warna). Mode Dengan Warna menyalin format [kode HEX]Nama, sedangkan Biasa (Hitam) menyalin nama saja. Dukungan kode warna dan simbol Unicode di Mobile Legends dapat berbeda.</p>
     </section>
   </main>
   <script>
@@ -50,6 +66,8 @@
     let db = null;
     let current = '';
     let previous = '';
+    let selectedName = '';
+    let selectedColor = null;
 
     function randomIndex(length) {
       if (length <= 1) return 0;
@@ -59,6 +77,41 @@
       return buffer[0] % length;
     }
 
+    function chooseColor() {
+      const filter = $('color').value;
+      return filter === 'acak'
+        ? db.warna[randomIndex(db.warna.length)]
+        : db.warna.find(color => color.hex === filter) || db.warna[0];
+    }
+
+    function updateColorMode() {
+      const enabled = $('mode').value === 'warna';
+      $('color').disabled = !enabled || !db;
+      $('colorField').hidden = !enabled;
+      if (selectedName && enabled) selectedColor = chooseColor();
+      render();
+    }
+
+    function render() {
+      if (!selectedName) return;
+      const colored = $('mode').value === 'warna';
+      current = colored ? `[${selectedColor.hex.slice(1)}]${selectedName}` : selectedName;
+      $('nickname').textContent = selectedName;
+      $('nickname').style.color = colored ? selectedColor.hex : '#17243a';
+      $('code').replaceChildren();
+      if (colored) {
+        const swatch = document.createElement('span');
+        swatch.className = 'swatch';
+        swatch.style.backgroundColor = selectedColor.hex;
+        $('code').append(swatch, document.createTextNode(`${selectedColor.nama} (${selectedColor.hex}) · ${current}`));
+      }
+      $('code').hidden = !colored;
+      $('copy').textContent = colored ? '⧉ Salin Nama Berwarna' : '⧉ Salin Nama';
+      $('copy').hidden = false;
+      $('copy').disabled = false;
+      $('status').textContent = '';
+    }
+
     function generate() {
       if (!db) return;
       let name = db.nama[randomIndex(db.nama.length)];
@@ -66,20 +119,9 @@
         name = db.nama[(db.nama.indexOf(name) + 1) % db.nama.length];
       }
       previous = name;
-      const color = db.warna[randomIndex(db.warna.length)];
-      const hex = color.hex.slice(1);
-      current = `[${hex}]${name}`;
-      $('nickname').textContent = name;
-      $('nickname').style.color = color.hex;
-      $('code').replaceChildren();
-      const swatch = document.createElement('span');
-      swatch.className = 'swatch';
-      swatch.style.backgroundColor = color.hex;
-      $('code').append(swatch, document.createTextNode(`${color.nama} (${color.hex}) · ${current}`));
-      $('code').hidden = false;
-      $('copy').hidden = false;
-      $('copy').disabled = false;
-      $('status').textContent = '';
+      selectedName = name;
+      selectedColor = chooseColor();
+      render();
     }
 
     async function copyName() {
@@ -105,12 +147,25 @@
     }
 
     $('generate').addEventListener('click', generate);
+    $('mode').addEventListener('change', updateColorMode);
+    $('color').addEventListener('change', () => {
+      if (!db) return;
+      selectedColor = chooseColor();
+      render();
+    });
     $('copy').addEventListener('click', copyName);
     fetch('./names-warna.json', {cache:'no-cache'})
       .then(response => {if (!response.ok) throw new Error('Load failed'); return response.json();})
       .then(data => {
         if (!Array.isArray(data.nama) || !data.nama.length || !Array.isArray(data.warna) || !data.warna.length) throw new Error('Invalid data');
         db = data;
+        for (const color of db.warna) {
+          const option = document.createElement('option');
+          option.value = color.hex;
+          option.textContent = `${color.nama} (${color.hex})`;
+          $('color').append(option);
+        }
+        updateColorMode();
         $('generate').disabled = false;
         $('status').textContent = '';
       })
