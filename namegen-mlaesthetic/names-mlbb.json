@@ -945,11 +945,15 @@
     "Bingkai": "꧁{nama}꧂",
     "Pro": "亗{nama}亗",
     "Sayap": "彡{nama}彡",
+    "Omega": "𐍉{nama}𐍉",
     "Malaikat": "𓆩{nama}𓆪",
     "Bintang": "★{nama}★",
+    "Banum": "𖤍{nama}𖤍",
     "Silang": "乂{nama}乂",
     "Hati": "♡{nama}♡",
     "Akhiran": "{nama}ツ",
-    "Sakura": "々{nama}々"
+    "Sakura": "々{nama}々",
+    "Jaya": "栄光{nama}",
+    "Manji": "卍{nama}卍"
   }
 }
